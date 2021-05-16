@@ -1,0 +1,6 @@
+myQualityFoam.C
+myQuality.C
+mySkewness.C
+myAspectRatio.C
+
+EXE = $(FOAM_USER_APPBIN)/myQualityFoam
