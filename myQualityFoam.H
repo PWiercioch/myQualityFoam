@@ -75,9 +75,9 @@ void displayInfo(List<scalar> jakosc, string nazwa, fvMesh& mesh, bool combinedB
 		maxQ=findMin(jakosc);
 	}
 
-	cout<<"Biggest value of "<<nazwa<<": "<<jakosc[maxQ];
+	cout<<"Worst value of "<<nazwa<<": "<<jakosc[maxQ];
 	Info<<" in cell No. "<<maxQ<<" in "<<mesh.C()[maxQ]<<nl;
-	cout<<"Smallest value of "<<nazwa<<": "<<jakosc[minQ];
+	cout<<"Best value of "<<nazwa<<": "<<jakosc[minQ];
 	Info<<" in cell No. "<<minQ<<" in "<<mesh.C()[minQ]<<nl;
 	cout<<nl<<"Mean value of "<<nazwa<<": "<<average(jakosc)<<nl<<nl;
 }
