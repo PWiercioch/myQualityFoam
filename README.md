@@ -111,7 +111,7 @@ $ myQualityFoam
 First we will see mesh statistics.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/83305684/119682787-74682280-be43-11eb-8ca6-1084ac5ed78f.png" />
+<img src="https://user-images.githubusercontent.com/83305684/119682787-74682280-be43-11eb-8ca6-1084ac5ed78f.png" width="600"/>
 <p align="center">
 <em>Mesh statistics</em>
 </p>
@@ -119,7 +119,7 @@ First we will see mesh statistics.
 Then mesh quality for component metrics as well as combined metric. The decision whether mesh quality is good enough depends on number of factors and should be made with consideration to individual example. 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/83305684/119683720-2c95cb00-be44-11eb-80d7-9e4a1b6b0a9f.png" />
+<img src="https://user-images.githubusercontent.com/83305684/119683720-2c95cb00-be44-11eb-80d7-9e4a1b6b0a9f.png" width="600"/>
 <p align="center">
 <em>Mesh quality</em>
 </p>
@@ -127,7 +127,7 @@ Then mesh quality for component metrics as well as combined metric. The decision
 At last the calculation time is displayed.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/83305684/119684071-7da5bf00-be44-11eb-932d-65ec9f19dee1.png" />
+<img src="https://user-images.githubusercontent.com/83305684/119684071-7da5bf00-be44-11eb-932d-65ec9f19dee1.png" width="600"/>
 <p align="center">
 <em>Calculation time</em>
 </p>
@@ -145,7 +145,7 @@ paraview foam.foam &
 Now we can visualize mesh quality.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/83305684/119685449-a9757480-be45-11eb-9438-34ef04e5e099.png" />
+<img src="https://user-images.githubusercontent.com/83305684/119685449-a9757480-be45-11eb-9438-34ef04e5e099.png" width="600"/>
 <p align="center">
 <em>Combined Quality metric</em>
 </p>
