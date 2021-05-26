@@ -44,9 +44,9 @@ void meshInfo(fvMesh& mesh)
 	Info<< "MESH STATISTICS" << endl;
 	sectionBreak();
 	Info<<endl<<"Mesh has "<<mesh.nSolutionD()<<" solutions: "<<mesh.solutionD()<<endl<<endl
-	<< "Liczba komórek: " << mesh.cells().size() << nl
-	<< "Liczba ścianek: " << mesh.faces().size() << nl
-	<< "Liczba węzłów: " << mesh.points().size() << nl;
+	<< "Cell count: " << mesh.cells().size() << nl
+	<< "Face count: " << mesh.faces().size() << nl
+	<< "Node count: " << mesh.points().size() << nl;
 	Info<<endl;
 };
 
@@ -75,11 +75,11 @@ void displayInfo(List<scalar> jakosc, string nazwa, fvMesh& mesh, bool combinedB
 		maxQ=findMin(jakosc);
 	}
 
-	cout<<"Największa wartość "<<nazwa<<": "<<jakosc[maxQ];
-	Info<<" w komórce "<<maxQ<<" w "<<mesh.C()[maxQ]<<nl;
-	cout<<"Najmniejsza wartość "<<nazwa<<": "<<jakosc[minQ];
-	Info<<" w komórce "<<minQ<<" w "<<mesh.C()[minQ]<<nl;
-	cout<<nl<<"Średnia wartość "<<nazwa<<": "<<average(jakosc)<<nl<<nl;
+	cout<<"Biggest value "<<nazwa<<": "<<jakosc[maxQ];
+	Info<<" in cell No. "<<maxQ<<" w "<<mesh.C()[maxQ]<<nl;
+	cout<<"Smallest value "<<nazwa<<": "<<jakosc[minQ];
+	Info<<" in cell No. "<<minQ<<" w "<<mesh.C()[minQ]<<nl;
+	cout<<nl<<"Mean value "<<nazwa<<": "<<average(jakosc)<<nl<<nl;
 }
 
 void writeData(List<scalar> list, volScalarField file) // insert data to volScalarField

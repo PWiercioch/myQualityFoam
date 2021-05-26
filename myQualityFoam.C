@@ -73,16 +73,16 @@ int main(int argc, char *argv[])
 	Info<<"MESH QUALITY"<<endl;
 	sectionBreak();
 	Info<<endl;
-	Info<<"Kryteria składowe"<<endl;
+	Info<<"Component metrics"<<endl;
 	sectionBreak();
 	
-	displayInfo(skew.showQuality(), "skośność", mesh,false);
+	displayInfo(skew.showQuality(), "Skewness", mesh,false);
 	Info<<endl;
-	displayInfo(AR.showQuality(), "stosunek krawędzi", mesh,false);
+	displayInfo(AR.showQuality(), "Aspect Ratio", mesh,false);
 	
-	Info<<endl<<endl<<"Kryterium łączone"<<endl;
+	Info<<endl<<endl<<"Combined metric"<<endl;
 	sectionBreak();
-	displayInfo(combinedMetric, "łączona jakość", mesh,true);
+	displayInfo(combinedMetric, "combined metric", mesh,true);
 	if(limitSize.size()>0)
 	{
 		volScalarField outOfRange
@@ -102,7 +102,7 @@ int main(int argc, char *argv[])
 		writeData(overTheLimit, outOfRange);
 		
 		Info<<endl;
-		Info<<"Ilość komórek poza zasięgiem: "<<limitSize.size()<<endl;
+		Info<<"No. of cells out of range: "<<limitSize.size()<<endl;
 		sectionBreak();
 		Info<<endl;
 	}
