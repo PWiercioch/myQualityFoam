@@ -17,7 +17,8 @@ void myAspectRatio::dimensionLoop(label dirI)
 	{
 		if(mag(cellInst.edges(mesh->faces())[edgeI].unitVec(mesh->points())[dirI])==0) // if any edge vector componet = 0
 		{	
-			goto breaking; // simple break statement didn't work correctly 
+			goto breaking; // simple break statement didn't work correctly
+		}
 		else{
 		if((mag(cellInst.edges(mesh->faces())[edgeI].unitVec(mesh->points())[dirI])>0.0001)&&(mesh->solutionD()[dirI])==-1) //jesli wektor krawedzi jest w danym kierunku(wiekszy od malej liczby) i ten kierunek jest eempty 
 		{
@@ -28,8 +29,8 @@ void myAspectRatio::dimensionLoop(label dirI)
 		}
 	
 	breaking: ;
+	}
 }
-
 void myAspectRatio::calculations()
 {
 	cellList.append(cellInst.edges(mesh->faces())[edgeI].mag(mesh->points())); // append to single cell edge length list
