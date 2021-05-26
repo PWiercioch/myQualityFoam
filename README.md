@@ -1,6 +1,7 @@
 # myQualityFoam
 Application used in my Engineering Thesis "Application for evaluation of geometric model discretization quality".
 Application is meant to be used inside OpenFOAM enviroment.
+Created 01.2021.
 
 ## Table of contents
 - [OpenFOAM](#openfoam)
