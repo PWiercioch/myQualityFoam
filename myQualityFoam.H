@@ -75,11 +75,11 @@ void displayInfo(List<scalar> jakosc, string nazwa, fvMesh& mesh, bool combinedB
 		maxQ=findMin(jakosc);
 	}
 
-	cout<<"Biggest value "<<nazwa<<": "<<jakosc[maxQ];
-	Info<<" in cell No. "<<maxQ<<" w "<<mesh.C()[maxQ]<<nl;
-	cout<<"Smallest value "<<nazwa<<": "<<jakosc[minQ];
-	Info<<" in cell No. "<<minQ<<" w "<<mesh.C()[minQ]<<nl;
-	cout<<nl<<"Mean value "<<nazwa<<": "<<average(jakosc)<<nl<<nl;
+	cout<<"Biggest value of "<<nazwa<<": "<<jakosc[maxQ];
+	Info<<" in cell No. "<<maxQ<<" in "<<mesh.C()[maxQ]<<nl;
+	cout<<"Smallest value of "<<nazwa<<": "<<jakosc[minQ];
+	Info<<" in cell No. "<<minQ<<" in "<<mesh.C()[minQ]<<nl;
+	cout<<nl<<"Mean value of "<<nazwa<<": "<<average(jakosc)<<nl<<nl;
 }
 
 void writeData(List<scalar> list, volScalarField file) // insert data to volScalarField
